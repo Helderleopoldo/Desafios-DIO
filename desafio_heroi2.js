@@ -17,12 +17,12 @@ for (let i = 0; i < n; i++) {
     herois.forEach(heroi => {
         let [nome, experiencia] = heroi.split(":");
         experiencia = parseInt(experiencia);
-        // tratamento de erro de usuário
+        // tratamento de erro do usuário
         if (!nome || isNaN(experiencia)) {
             console.log("Entrada inválida. Por favor, insira no formato (nome:nivel).");
             return;
         }
-        // processando os dados
+        // processando os dados para definição do nivel
         let nivel;
         if (experiencia < 1000) {
             nivel = "Ferro";
