@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+    <header class="header-game">
+        <div class="info-game">
+            <label for="pontos">Pontos: <span>0</span></label>
+            <label for="lives">Chances: <span>10</span></label>
+            <label for="time">Tempo: <span>60</span></label>
+        </div>
+    </header>
+    <main class="container">
+        <h2>Memory Game</h2>
+        <div class="game"></div>
+        <button class="reset" onclick="window.location.reload()">RESET GAME</button>
+    </main>
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+
+</html>
