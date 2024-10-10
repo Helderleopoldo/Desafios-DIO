@@ -94,11 +94,11 @@ h2 {
     box-shadow: 0 0 50px inset rgba(255, 255, 255, 0.7);
 }
 
-.card.boxOpem {
+.card.boxOpen {
     transform: rotateY(0deg);
 }
 
-.boxOpem::after,
+.boxOpen::after,
 .boxMatch::after {
     transform: rotateY(180deg);
 }

@@ -27,7 +27,7 @@ for (let i = 0; i < emojis.length; i++) {
 }
 function handleClick() {
     if (openCards.length < 2) {
-        this.classList.add("boxOpem");
+        this.classList.add("boxOpen");
         openCards.push(this);
     }
     if (openCards.length === 2) {
@@ -39,8 +39,8 @@ function checkMatch() {
         openCards[0].classList.add("boxMatch");
         openCards[1].classList.add("boxMatch");
     } else {
-        openCards[0].classList.remove("boxOpem");
-        openCards[1].classList.remove("boxOpem");
+        openCards[0].classList.remove("boxOpen");
+        openCards[1].classList.remove("boxOpen");
     }
     openCards = [];
     if (document.querySelectorAll(".boxMatch").length === emojis.length) {
