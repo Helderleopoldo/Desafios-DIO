@@ -41,6 +41,7 @@ const MENSAGEM_DERROTAS = "Digite o número de derrotas do jogador. "
 
 let opcao = parseInt(prompt(MENSAGEM_OPCAO_INICIAL));
 console.log()
+
 while (opcao === 1) {
     if (isNaN(opcao)) {
         console.log("Opção inválida, digite um número inteiro. ")
@@ -50,7 +51,6 @@ while (opcao === 1) {
         console.log("Consulta finalizada. Jogadores rankeados:  ");
     }
     console.log()
-
     const nome = prompt("Digite o nome do jogador para consultar.  ")
 
     const vitorias = parseInt(prompt(MENSAGEM_VITORIAS))
@@ -58,7 +58,6 @@ while (opcao === 1) {
         console.log("Opção inválida, digite um número inteiro para vitórias. ")
         continue;
     }
-
     const derrotas = parseInt(prompt(MENSAGEM_DERROTAS))
     if (isNaN(derrotas)) {
         console.log("Opção inválida, digite um número inteiro para derrotas. ")
@@ -72,7 +71,8 @@ while (opcao === 1) {
         saldoVitorias: saldoVitorias,
         nivel: nivel
     })
-
+    console.log(`O jogador: ${nome}, tem um saldo de ${saldoVitorias} vitórias e está no nivel ${nivel}.`)
+    console.log()
     opcao = parseInt(prompt("Digite 1 para continuar consulta ou 2 para finalizar. "))
     console.log()
 }
