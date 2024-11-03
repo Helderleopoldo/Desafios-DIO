@@ -16,7 +16,7 @@
         <header class="header-piano">
             <h2 class="title">Virtual Piano</h2>
             <div class="columm volume-slider"><span>Volume</span>
-                <input type="range">
+                <input type="range" min="0" max="1" value="0.5" step="any">
             </div>
             <div class="columm keys-check"><span>Teclas</span>
                 <input type="checkbox" checked>
@@ -24,7 +24,6 @@
         </header>
         <secttion class="piano-container">
             <ul class="piano-keys">
-
                 <li class="key white" data-key="a"><span>a</span></li>
                 <li class="key black" data-key="w"><span>w</span></li>
                 <li class="key white" data-key="s"><span>s</span></li>
