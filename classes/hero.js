@@ -1,6 +1,6 @@
 // Desafio DIO de classes
 
-const prompt = require('prompt-sync')();
+//const prompt = require('prompt-sync')();
 
 class heroes {
     constructor(name, age, heroClass, attackType) {

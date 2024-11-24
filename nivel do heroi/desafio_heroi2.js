@@ -3,7 +3,7 @@ versão com console.table() para melhor organização e exibição dos dados
 */
 
 // função para executar entrada direto no terminal
-const prompt = require('prompt-sync')();
+//const prompt = require('prompt-sync')();
 
 // entrada de usuário para quantidade de herois
 let n = parseInt(prompt("Digite o número de heróis que deseja comparar: "));
